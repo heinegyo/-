@@ -1,0 +1,625 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+}
+textarea {
+  resize : none;
+}
+/* layout佈局 */
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+}
+.header{
+	height: 560px;
+	width: 1024px;
+	background: black;
+	
+}
+.navbar{
+	background: rgba(74,74,74,0.5);
+	padding: 20px 42px 0px 42px;
+	
+}
+.header h1{
+	float: left;
+}
+.header .navbar h1 .loge{
+	display: block;
+	width: 170px;
+	height: 36px;
+	background: url(../images/long.png);
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.header .navbar h1 .loge:hover{
+	background: url(../images/logeGreen_03.png);
+}
+.header ul {
+	float: right;
+}
+.header ul li{
+	float: left;
+}
+.header ul li a{
+	display: block;
+	width: 60px;
+	height: 56px;
+	margin-right: 20px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 25px;
+}
+.header ul li a:hover{
+	border-bottom:7px solid #00cc99 ;
+	color: #00CC99;
+	box-sizing: border-box;
+}
+.clearfix:after{
+  content:'';     /*內仍為空 有使用偽元素的話一定要搭配 	  
+                   content:’’ 屬性。*/
+  display:table;  /*區塊元素*/
+  clear:both;     /*清除浮動*/
+}
+.content{
+	
+}
+.footer{
+	padding: 37px 37px;
+	background: #323228;
+}
+.footer-title{
+	float: left;
+	width: 170px;
+}
+.footer .footer-title a{
+	float: right;
+	display: block;
+    width: 170px;
+	height: 36px;
+	background: url(../images/long.png);
+}
+.footer .footer-title span{
+	float: right;
+	margin-top: 8px;
+	color: #8d8d8c;
+	font-size: 14px;
+}
+.footer .footer-soicalmedia{
+	float: right;
+	padding-right:0px ;
+}
+.footer .footer-soicalmedia li{
+	float: left;
+	width: 54px;
+	height: 58px;
+	padding: 13px 0px 13px 22px;
+	box-sizing: border-box;
+}
+.footer-soicalmedia a{
+	display: block;
+	height: 32px;
+	width: 32px;
+}
+.footer-soicalmedia .Facebook{
+	background: url(../images/Facebool_icon.png);
+}
+.footer-soicalmedia .Twitter{
+	background: url(../images/Twitter.png);
+}
+.footer-soicalmedia .Instagram{
+	background: url(../images/Instagram.png);
+}
+
+
+
+/* index首頁*/
+.index-header{
+	background: url(../images/index-banner-bg_01.png);
+}
+.index-header .banner{
+	margin: 108px 0px 140px 41px;
+}
+.index-header .banner h2{
+	font-size: 44px;
+	color: #00CC99;
+	line-height: 80px;
+}
+.index-header .banner h2 span{
+	color: #ffffff;
+}
+.index-header .banner .submit{
+	display: block;
+	background: #00CC99;
+	margin-top: 25px;
+	width: 223px;
+	height: 53px;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	line-height: 53px;
+	border-radius:5px;
+}
+.index-header .banner .submit:hover{
+	background: #FFFFFF;
+	color: #00CC99;
+}
+.index-section-course{
+	padding: 62px 42px 61px 42px;
+}
+.index-section-course .course-title{
+	padding-bottom: 27px;
+}
+.index-section-course .course-title h3{
+	display: inline-block;
+	font-size: 33px;
+	color: #00CC99;
+}
+.index-section-course .course-title span{
+	margin-left:14px ;
+	color: #a2a2a2;
+	font-size: 18px;
+}
+.index-section-course .course-title a{
+	float: right;
+	display: inline-block;
+	width: 92px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	color: #00CC99;
+	font-size: 15px;
+	border: #00CC99 solid 2px;
+	border-radius: 5px;
+}
+.index-section-course .course-title a:hover{
+	background: #00CC99;
+	color: #FFFFFF;
+}
+.index-section-course .course-list li{
+	float: left;
+	width: 299px;
+	/* height: 274px; */
+	border: #d9d9d9 solid 1px;
+	border-top: none;
+	padding: 24px 23px 27px 17px;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 4px #b8b8b8;
+}
+.index-section-course .course-list li:hover{
+	box-shadow: 7px 7px 20px #b8b8b8;
+}
+.index-section-course .course-list .rwd{
+	margin: 0px  18px;
+}
+.index-section-course .course-list img{
+	width: 129px;
+	height: 136px;
+	margin: 0px 72px 0px 63px;
+}
+.index-section-course .course-list h4{
+	text-align: center;
+	font-size: 18px;
+	color: #4a4a4a;
+	margin: 14px 0px 14px 0px;
+}
+.index-section-course .course-list p{
+	font-size: 16px;
+	line-height: 25px;
+	color: #9b9b9b;
+	
+}
+.index-section-contrast{
+	padding: 0 42px 60px 42px;
+}
+.index-section-contrast .contrast-title{
+	margin-bottom: 31px;
+}
+.index-section-contrast .contrast-title h3{
+	font-size: 33px;
+	color: #00CC99;
+	display: inline-block;
+}
+.index-section-contrast .contrast-title span{
+	font-size: 19px;
+	color: #a2a2a2;
+	margin-left: 15px;
+}
+.index-section-contrast .contrast-table{
+	color: #323223;
+	text-align: center;	
+	line-height: 50px;
+}
+.index-section-contrast .contrast-table tr{
+	height: 49px;
+	border-bottom: 1px solid #ebebeb ;
+}
+.index-section-contrast .contrast-table th{
+	background: #ebebeb ;
+	font-weight: 600;
+}
+.index-section-contrast .contrast-table th,td{
+	padding: 0 17px;
+	width: 235px;
+	font-size: 15px;
+}
+.index-section-contrast .contrast-table span{
+	color: #00CC99;
+}
+.index-section-apply{
+	padding: 140px 42px 60px 42px;
+	background: #ebebeb;
+}
+.index-section-apply .apply-title{
+	float: left;
+}
+.index-section-apply .apply-title h3{
+	font-size: 30px;
+	line-height: 60px;
+}
+.index-section-apply .apply-form{
+	float: right;
+}
+.index-section-apply .apply-form input{
+	display: block;
+	width: 465px;
+	height: 52px;
+	margin-bottom: 20px;
+	padding-left:23px ;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+#apply-submit{
+	float: right;
+	width: 139px;
+	height: 52px;
+	background: #00CC99;
+	color: #FFFFFF;
+	padding: 0;
+}
+#apply-submit:hover{
+	background: #FFFFFF;
+	color: #00CC99;
+}
+/* 課程course */
+.course-header{
+	background: url(../images/banner%20photo%202.png);
+	position: relative;
+}
+.course-header .course-banner{
+	margin-top: 112px;
+	margin-left: 40px;
+}
+.course-header .course-banner h2{
+	font-size: 40px;
+	color: #FFFFFF;
+	margin-bottom: 18px;
+	margin-left: 2px;
+}
+.course-header .course-banner span{
+	font-size: 24px;
+	color: #00CC99;
+	display: block;
+	margin-bottom: 60px;
+}
+.course-header .course-banner a{
+	display: block;
+	width: 221px;
+	height: 52px;
+	font-size: 20px;
+	background: #00CC99;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 52px;
+	margin-left: 5px;
+}
+.course-header .course-banner a:hover{
+	background: #FFFFFF;
+	color: #00CC99;
+}
+.course-img{
+	width: 221px;
+	height: 132px;
+	position: absolute;
+	top: 118px;
+	right: 59px;
+}
+.course-htmlImg{
+	margin-right: 27px;
+}
+.course-content{
+	padding: 60px 201px 60px 201px;
+}
+.course-content .teacher{
+	margin-bottom: 57px;
+}
+.course-content .teacher img{
+	width: 223px;
+	height: 223px;
+	float: left;
+}
+.course-content .teacher h2{
+	float: left;
+	margin: 70px 35px 30px 40px;
+	color: #00CC99;
+	font-size: 32px;
+	line-height: 51px;
+}
+.course-content .teacher span{
+	color: #000000;
+}
+.course-content .teacher ul{
+	float: left;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	list-style: url(../images/list-style-img_03.png);
+	color: #bcbcbc;
+	line-height: 25px;
+}
+.course-content .teacher ul li{
+	padding-left:36px ;
+}
+.course-content .intro{
+	margin-bottom: 60px;
+}
+.course-content .intro h2{
+	color: #00CC99;
+	font-size: 36px;
+}
+
+.course-content .intro span{
+	color: #bcbcbc;
+	font-size: 20px;
+}
+.course-content .intro ol{
+	margin-top: 28px;
+	list-style-type: decimal;
+	font-size: 16px;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+.course-content .intro ol li{
+	line-height: 23px;
+	padding-left: 10px;
+}
+.course-content .contennts h2{
+	color: #00CC99;
+	font-size: 34px;
+	margin-bottom: 30px;
+}
+.course-content .contennts span{
+	color: #bcbcbc;
+	font-size: 20px;
+}
+.course-content .contennts ul li{
+	padding-left: 37px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #9b9b9b;
+}
+.course-content .contennts .row{
+	background: #ebebeb;
+	font-weight: 480;
+	color: #323223;
+}
+.register{
+	background: #ebebeb;
+	padding: 155px 203px 145px 203px;
+}
+.register .register-title{
+	float: left;
+	font-size: 30px;
+}
+.register .register-title h3{
+	margin-top: 33px;
+}
+.register .submit{
+	margin-top: 47px;
+	float: right;
+	background: #00CC99;
+	width: 222px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.register .submit:hover{
+	background: #FFFFFF;
+	color: #00CC99;
+}
+
+/* 問答 */
+.faq-header{
+	background: url(../images/faq-banner-bg_02.png);
+}
+.faq-header .faq-header-banner-title{
+	text-align: center;
+	margin: 108px 203px 191px 203px;
+}
+.faq-header .faq-header-banner-title h2{
+	font-size: 46px;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+.faq-header .faq-header-banner-title span{
+	color: #00CC99;
+	font-size: 23px;
+	display: block;
+	margin-bottom: 53px;
+}
+.search-form .search-text {
+  font-size: 17px;
+  float: left;
+  width: 565px;
+  background: #fffff;
+  height: 54px;
+  border:none;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 30px;
+}
+.search-form button {
+  float: left;
+  width: 53px;
+  height: 54px;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 22px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 27px;
+  border: none;
+}
+.search-form button:hover {
+	color: #00CC99;
+}
+.faq-content{
+	margin: 0px 122px 59px 122px;
+}
+.faq-content h3{
+	color: #00CC99;
+	font-size: 34px;
+	margin-bottom: 35px;
+	margin-top: 60px;
+}
+.faq-content span{
+	margin-left: 20px;
+	color: #9b9b9b;
+	font-size: 20px;
+}
+.faq-content h4{
+	color: #323223;
+	margin-top: 35px;
+	line-height: 29px;
+}
+.faq-content p{
+	color: #9b9b9b;
+	font-size: 16px;
+	line-height: 20px;
+}
+.faq-content .mail{
+	color: #00CC99;
+	margin: 0;
+	font-size: 15px;
+}
+.faq-content ul,ol{
+	color: #9b9b9b;
+	font-size: 15px;
+	margin-top: 10px;
+}
+.faq-content ol li{
+	padding-left: 13px;
+	list-style-type: decimal;
+	margin-left: 50px;
+	line-height: 20px;
+}
+.faq-content ul li{
+	padding-left: 16px;
+	margin-left: 50px;
+	line-height: 20px;
+	list-style-image:url(../images/list-style-img_03.png) ;
+}
+.faq-content .faq-refund h5{
+	margin-top: 10px;
+}
+.faq-form{
+	padding: 122px 42px 60px 40px;
+	background: #ebebeb;
+}
+.faq-form .form-title{
+	float: left;
+	font-size: 30px;
+	margin-top: 15px;
+}
+.faq-form .form-title h4{
+	margin-bottom:30px ;
+}
+.faq-form form{
+	float: right;
+	width: 464px;
+	font-size: 20px;
+}
+.faq-form form input{
+	float: right;
+	width: 464px;
+	padding: 15px 25px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+#problem{
+	float: right;
+	height: 201px;
+	width: 464px;
+	margin-bottom: 20px;
+	border: none;
+	padding: 14px 18px;
+	font-size: 20px;
+}
+#faq-submit{
+	width: 142px;
+	height: 54px;
+	background: #00CC99;
+	color: #FFFFFF;
+}
+#faq-submit:hover{
+	background: #FFFFFF;
+	color: #00CC99;
+}
